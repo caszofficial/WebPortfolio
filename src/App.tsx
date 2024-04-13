@@ -8,7 +8,7 @@ import Projects from "./Projects/Projects";
 
 function App() {
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
+    <Box sx={{ display: "flex", justifyContent: "center", p: 4 }}>
       <Paper elevation={2} sx={{ width: "40%", p: 5 }}>
         <Grid container spacing={4}>
           <Grid item xs={12}>
