@@ -37,7 +37,7 @@ const Projects = () => {
           }}
         >
           <Typography>
-            Web E-commerce{" "}
+            Web E-commerce
             <span>
               <strong>Full Stack App</strong>
             </span>
@@ -47,6 +47,25 @@ const Projects = () => {
             <span>HTML,CSS,MaterialUI, TypeScript, NodeJS, SQL</span>
           </Typography>
           <Link href="https://ecommerce-frontend-xuth.onrender.com">
+            Visit Website
+          </Link>
+        </Box>
+        <Box
+          sx={{
+            width: "30%",
+            height: "auto",
+            border: "1px solid black",
+            borderRadius: "20px",
+            p: 2,
+            m: 1,
+          }}
+        >
+          <Typography>Todo List</Typography>
+          <Typography>
+            <strong>Stack: </strong>
+            <span>HTML, CSS, JavaScript, React</span>
+          </Typography>
+          <Link href="https://caszofficial.github.io/TodoList/">
             Visit Website
           </Link>
         </Box>
