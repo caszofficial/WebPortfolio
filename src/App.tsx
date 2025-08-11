@@ -1,4 +1,3 @@
-import { Box, Grid, Paper } from "@mui/material";
 import About from "./About/About";
 import TechStack from "./Skills/Skills";
 import PersonalInfo from "./About/PersonalInfo";
@@ -8,42 +7,22 @@ import Projects from "./Projects/Projects";
 
 function App() {
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", p: 4 }}>
-      <Paper elevation={2} sx={{ width: "40%", p: 5 }}>
-        <Grid container spacing={4}>
-          <Grid item xs={12}>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <Box
-                component="img"
-                src={image}
-                width={150}
-                height={180}
-                sx={{ borderRadius: "20px" }}
-              />
-              <PersonalInfo />
-            </Box>
-          </Grid>
-          <Grid item xs={12}>
-            <About />
-          </Grid>
-          <Grid item xs={12}>
-            <Experience />
-          </Grid>
-          <Grid item xs={12}>
-            <Projects />
-          </Grid>
-          <Grid item xs={12}>
-            <TechStack />
-          </Grid>
-        </Grid>
-      </Paper>
-    </Box>
+    <div className="grid grid-cols-1 p-5 w-full md:w-6/10 mx-auto my-20 md:rounded-2xl md:border-1 md:border-gray-200 md:shadow-2xl">
+      <div className="grid grid-cols-1 mb-10 md:grid-cols-2">
+        <img
+          src={image}
+          alt="Not Found"
+          className="w-2/3 rounded-2xl mb-10 md:mb-5 drop-shadow-lg col-span-1"
+        />
+        <PersonalInfo />
+      </div>
+      <div className="grid grid-cols-1 gap-10">
+        <About />
+        <Experience />
+        <Projects />
+        <TechStack />
+      </div>
+    </div>
   );
 }
 

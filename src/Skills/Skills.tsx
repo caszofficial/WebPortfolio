@@ -1,4 +1,3 @@
-import { Box, Typography } from "@mui/material";
 import {
   IconBrandCss3,
   IconBrandGit,
@@ -11,65 +10,55 @@ import {
   IconBrandTypescript,
 } from "@tabler/icons-react";
 
-const TechStack = () => {
-  const skillBoxStyle = {
-    display: "flex",
-    backgroundColor: "#f1f1f1",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "fit-content",
-    height: "fit-content",
-    borderRadius: 2,
-    p: 0.5,
-    mr: 1,
-  };
+// const SkillContainer = () => {
+//   <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-[2px] p-0.5 ">
+//     {children}
+//   </div>;
+// };
 
+const TechStack = () => {
   return (
-    <Box>
-      <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-        Skills
-      </Typography>
-      <Box
-        sx={{ display: "flex", justifyContent: "left", alignItems: "center" }}
-      >
-        <Box sx={skillBoxStyle}>
-          <IconBrandHtml5 />
-          <Typography>HTML</Typography>
-        </Box>
-        <Box sx={skillBoxStyle}>
-          <IconBrandCss3 />
-          <Typography>CSS</Typography>
-        </Box>
-        <Box sx={skillBoxStyle}>
-          <IconBrandJavascript />
+    <div>
+      <h4 className="text-2xl font-bold mb-5">Skills</h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandHtml5 className="size-5" />
+          <p>HTML</p>
+        </div>
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandCss3 className="size-5" />
+          <p>CSS</p>
+        </div>
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandJavascript className="size-5" />
           JavaScript
-        </Box>
-        <Box sx={skillBoxStyle}>
-          <IconBrandGit />
-          Git
-        </Box>
-        <Box sx={skillBoxStyle}>
-          <IconBrandGithub />
-          GitHub
-        </Box>
-        <Box sx={skillBoxStyle}>
-          <IconBrandTypescript />
+        </div>
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandTypescript className="size-5" />
           TypeScript
-        </Box>
-        <Box sx={skillBoxStyle}>
-          <IconBrandReact />
+        </div>
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandGit className="size-5" />
+          Git
+        </div>
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandGithub className="size-5" />
+          GitHub
+        </div>
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandReact className="size-5" />
           ReactJS
-        </Box>
-        <Box sx={skillBoxStyle}>
-          <IconBrandNodejs />
+        </div>
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandNodejs className="size-5" />
           NodeJS
-        </Box>
-        <Box sx={skillBoxStyle}>
-          <IconBrandMysql />
+        </div>
+        <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
+          <IconBrandMysql className="size-5" />
           MySQL
-        </Box>
-      </Box>
-    </Box>
+        </div>
+      </div>
+    </div>
   );
 };
 

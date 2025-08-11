@@ -1,76 +1,38 @@
-import { Box, Link, Typography } from "@mui/material";
-
 const Projects = () => {
   return (
-    <Box>
-      <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-        Projects
-      </Typography>
-      <Box sx={{ display: "flex", flexWrap: "wrap" }}>
-        <Box
-          sx={{
-            width: "30%",
-            height: "auto",
-            border: "1px solid black",
-            borderRadius: "20px",
-            p: 2,
-            m: 1,
-          }}
-        >
-          <Typography>TinderSwipe</Typography>
-          <Typography>
+    <div>
+      <h4 className="text-2xl font-bold mb-5">Projects</h4>
+      <div className="grid grid-cols-1  md:grid-cols-2 gap-5">
+        <div className="w-full h-auto border-1 border-black rounded-2xl p-2 ">
+          <p className="text-2xl font-bold">TinderSwipe</p>
+          <p className="text-xl">
             <strong>Stack: </strong>
             <span>HTML, CSS, JavaScript</span>
-          </Typography>
-          <Link href="https://caszofficial.github.io/TinderSwipe/">
+          </p>
+          <a
+            className="text-xl text-blue-400"
+            target="_blank"
+            href="https://caszofficial.github.io/TinderSwipe/"
+          >
             Visit Website
-          </Link>
-        </Box>
-        <Box
-          sx={{
-            width: "30%",
-            height: "auto",
-            border: "1px solid black",
-            borderRadius: "20px",
-            p: 2,
-            m: 1,
-          }}
-        >
-          <Typography>
-            Web E-commerce
-            <span>
-              <strong>Full Stack App</strong>
-            </span>
-          </Typography>
-          <Typography>
-            <strong>Stack: </strong>
-            <span>HTML,CSS,MaterialUI, TypeScript, NodeJS, SQL</span>
-          </Typography>
-          <Link href="https://ecommerce-frontend-xuth.onrender.com">
-            Visit Website
-          </Link>
-        </Box>
-        <Box
-          sx={{
-            width: "30%",
-            height: "auto",
-            border: "1px solid black",
-            borderRadius: "20px",
-            p: 2,
-            m: 1,
-          }}
-        >
-          <Typography>Todo List</Typography>
-          <Typography>
+          </a>
+        </div>
+        <div className="w-full h-auto border-1 border-black rounded-2xl p-2 ">
+          <p className="text-2xl font-bold">Todo List</p>
+          <p className="text-xl">
             <strong>Stack: </strong>
             <span>HTML, CSS, JavaScript, React</span>
-          </Typography>
-          <Link href="https://caszofficial.github.io/TodoList/">
+          </p>
+          <a
+            className="text-xl text-blue-400"
+            target="_blank"
+            href="https://caszofficial.github.io/TodoList/"
+          >
             Visit Website
-          </Link>
-        </Box>
-      </Box>
-    </Box>
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };
 

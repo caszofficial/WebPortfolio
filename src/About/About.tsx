@@ -1,14 +1,11 @@
-import { Box, Typography } from "@mui/material";
 import { about_me } from "../DataJson/data.json";
 
 const About = () => {
   return (
-    <Box>
-      <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-        About Me
-      </Typography>
-      <Typography sx={{ color: "gray" }}>{about_me}</Typography>
-    </Box>
+    <div className="grid grid-cols-1 col-span-1 w-full gap-2">
+      <h4 className="text-2xl font-bold">About Me</h4>
+      <p className="text-xl text-gray-500">{about_me}</p>
+    </div>
   );
 };
 
