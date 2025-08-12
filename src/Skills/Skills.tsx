@@ -19,7 +19,9 @@ import {
 const TechStack = () => {
   return (
     <div>
-      <h4 className="text-2xl font-bold mb-5">Skills</h4>
+      <h4 className="text-2xl font-bold mb-5 text-black dark:text-white">
+        Skills
+      </h4>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="flex bg-[#f1f1f1] justify-center items-center w-fit h-fit rounded-lg px-2 py-1 text-2xl gap-2">
           <IconBrandHtml5 className="size-5" />
